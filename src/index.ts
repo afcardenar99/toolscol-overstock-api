@@ -1,6 +1,5 @@
 import express from 'express';
-
-require('dotenv').config();
+import 'dotenv/config'; // Forma recomendada y limpia en TypeScript
 
 const app = express()
 const port = process.env.PORT || 3000
