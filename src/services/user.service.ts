@@ -1,10 +1,9 @@
-import{Request,Response} from "express";
-import{userRepository}from "../repositories/user.repository";
-export class userService{
+import { Request, Response } from "express";
+import { UserRepository } from "../repositories/user.repository";
 
-    public static async getAll(req:Request,res:Response){
-        const users= await userRepository.getAll(req,res);
-        return users
+export class UserService {
+    public static async getAll(req: Request, res: Response) {
+        const users = await UserRepository.getAll(req, res);
+        return users;
     }
-
 }
